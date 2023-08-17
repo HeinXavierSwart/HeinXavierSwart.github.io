@@ -1,0 +1,44 @@
+name: Docker CI/CD Pipeline
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+
+    - name: Install pipenv
+      run: |
+        pip install pipenv
+
+    - name: Generate requirements.txt from Pipfile.lock
+      run: |
+        pipenv lock -r > requirements.txt
+
+    - name: Build Docker Image
+      run: docker build -t my_flask_app .
+
+    - name: Run Docker Container
+      run: docker run -d --name flask_container my_flask_app
+
+    - name: Freeze the app
+      run: docker exec flask_container python freeze.py
+
+    - name: Copy static files out of container
+      run: docker cp flask_container:/app/build ./build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
