@@ -41,7 +41,8 @@ jobs:
       run: docker cp flask_container:/app/app/build ./build
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
+        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        BRANCH: gh-pages
+        FOLDER: build
