@@ -23,7 +23,7 @@ jobs:
 
     - name: Generate requirements.txt from Pipfile.lock
       run: |
-        pipenv lock -r > requirements.txt
+        pipenv requirements > requirements.txt
 
     - name: Build Docker Image
       run: docker build -t my_flask_app .
