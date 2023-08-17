@@ -34,8 +34,11 @@ jobs:
     - name: Freeze the app
       run: docker exec flask_container python freeze.py
 
+    - name: List directories inside the container
+      run: docker exec flask_container ls /app
+
     - name: Copy static files out of container
-      run: docker cp flask_container:/app/build ./build
+      run: docker cp flask_container:/app/app/build ./build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
