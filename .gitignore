@@ -31,9 +31,6 @@ MANIFEST
 # You can replace .venv with your preferred venv directory name
 .venv/
 
-# Pipenv & Poetry artifacts
-Pipfile.lock
-
 # JetBrains/PyCharm
 .idea/
 *.iml
