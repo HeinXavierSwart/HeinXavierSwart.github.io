@@ -1,12 +1,18 @@
-FROM python:3.9-slim
+# Start from the official Python image
+FROM python:3.x-slim
 
+# Set the working directory in the container
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
+# Copy the requirements.txt file to the container
+COPY requirements.txt .
 
-RUN pip install -r requirements.txt
+# Install the Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
+# Copy the rest of the application to the container
 COPY . .
 
-CMD ["flask", "run", "--host=0.0.0.0"]
+# Default command to run when starting the container
+CMD ["python", "run.py"]
 
