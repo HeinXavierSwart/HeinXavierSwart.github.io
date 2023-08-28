@@ -37,8 +37,8 @@ Here's a brief overview of the directory layout:
 
 1. **Clone the Repository**:
    ```bash
-   git clone [Your Repository URL]
-   cd [Your Repository Name]
+   git clone https://github.com/HeinXavierSwart/HeinXavierSwart.github.io.git
+   cd HeinXavierSwart
    
 2. **Activate the Virtual Environment (using Pipenv):**
     ```bash
