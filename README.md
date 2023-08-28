@@ -61,11 +61,11 @@ Here's a brief overview of the directory layout:
     
 5. **Visit http://localhost:5000 in your browser to view the app.**
 
-##Deployment
+## Deployment
 
 The site is hosted using the default [username].github.io domain provided by GitHub Pages. Commits pushed to the main branch trigger GitHub Actions to test and subsequently deploy to the gh-pages branch, updating the live site.
 
-##Feedback and Contributions
+## Feedback and Contributions
 
 Feedback, issues, and pull requests are welcome. Feel free to fork and contribute!
 
