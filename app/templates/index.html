@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Hein Swart</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ url_for('static', filename='assets/img/hein.jpg') }}" alt="..." /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ url_for('static', filename='assets/img/hein2.jpg') }}" alt="..." /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -123,13 +123,21 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">January 2013 - December 2015</span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">University of Stellenbosch</h3>
                             <div class="subheading mb-3">Bachelor of Science</div>
                             <div>(BSc) Nuclear, Radiation and Laser Physics</div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">January 2009 - December 2012</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Thesis</h3>
+                            <div class="subheading mb-3">Wide-band, Axially Symmetric Power Combiners Based On Short-Step Filters</div>
+                            <div>This thesis focuses on the intricate synthesis of a compact power combiner using a novel mathematical circuit framework. By employing a space-mapping methodology, I integrated multiple software tools to numerically derive the desired circuit's transfer function. This approach facilitated the extraction of circuit elements, subsequently translated into tangible components like inductors, capacitors, and transmission lines. A comprehensive 3D model was then crafted and simulated to align closely with the earlier deduced lumped element circuit model. By leveraging the space-mapping optimization technique, a correlation between the parameters of the physical 3D design and the synthesized circuit was established. The outcome was a meticulously designed, simulated product, which was subsequently fabricated and successfully validated in a lab setting.</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">November 2019</span></div>
                     </div>
                 </div>
             </section>
@@ -139,29 +147,52 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                    <ul>
+                        <li>C/C++, Cmake</li>
+                        <li>Python3, Pytest, Flask, Jinja</li>
+                        <li>PostgreSQL, MySQL</li>
+                        <li>Bash</li>
+                        <li>HTML5, CSS</li>
+                        <li>POSIX, Windows</li>
+                        <li>Gitlab, GitHub, CI/CD</li>
+                        <li>Docker, Kubernetes</li>
+                        <li>Ansible</li>
+                        <li>AWS, EC2, ECR, S3, Elastic</li>
                     </ul>
-                    <div class="subheading mb-3">Workflow</div>
+
+                    <!-- <ul class="list-inline dev-icons"> -->
+                    <!--     <li class="list-inline-item"><i class="fab fa-html5"></i></li> -->
+                    <!--     <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li> -->
+                    <!--     <li class="list-inline-item"><i class="fab fa-js-square"></i></li> -->
+                    <!--     <li class="list-inline-item"><i class="fab fa-angular"></i></li> -->
+                    <!--     <li class="list-inline-item"><i class="fab fa-react"></i></li> -->
+                    <!--     <li class="list-inline-item"><i class="fab fa-node-js"></i></li> -->
+                    <!--     <li class="list-inline-item"><i class="fab fa-sass"></i></li> -->
+                    <!--     <li class="list-inline-item"><i class="fab fa-less"></i></li> -->
+                    <!--     <li class="list-inline-item"><i class="fab fa-wordpress"></i></li> -->
+                    <!--     <li class="list-inline-item"><i class="fab fa-gulp"></i></li> -->
+                    <!--     <li class="list-inline-item"><i class="fab fa-grunt"></i></li> -->
+                    <!--     <li class="list-inline-item"><i class="fab fa-npm"></i></li> -->
+                    <!-- </ul> -->
+                <div class="subheading mb-3">Hardware Design Tools</div>
+                    <ul>
+                        <li>PCB design: KiCad, Altium, Eagle, DipTrace</li>
+                        <li>3D modelling: Fusion360</li>
+                        <li>3D printing</li>
+                        <li>CNC manufacturing</li>
+                        <li>High Frequency Circuit Design</li>
+                        <li>Analog and Digital Circuit design</li>
+                        <li>Embedded Microcontroller: ARM Cortex</li>
+                    </ul>
+                  <div class="subheading mb-3">Workflow</div>
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
+                            DevOps
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
+                            Test-Driven Development 
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -179,8 +210,15 @@
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
-                    <p>Say something nice about yourself.</p>
-                    <p class="mb-0">Here is another paragraph about your interests.</p>
+                    <p> I believe in the significance of a balanced life, and I actively nurture a spectrum of pursuits beyond my professional commitments. Many of my leisure hours are devoted to DIY home improvements, woodworking, electronics, and home automation. These hobbies not only resonate with my professional problem-solving aptitude but also fuel my perpetual quest for knowledge.</p>
+                    <p>Nature serves as my sanctuary, rejuvenating my spirit and honing my focus. From trail runs and mountain biking to immersive hikes, the adrenaline and exploration provide the ideal contrast to my daily routine. Additionally, the enigmatic depths of the underwater world beckon me, with freediving amidst kelp forests being a tranquil counterpoint to the bustling tech landscape. Through these activities, I draw fresh perspectives and innovative approaches, seamlessly integrating them into my professional endeavors.</p>
+                    <p class="mb-0">My coding journey doesn't end with work. Currently, most of my coding projects are hosted on a local GitLab server, a testament to my ongoing learning. I'm in the midst of refining these projects for a broader audience and will soon transition them to GitHub. As I make this transition, I'll be sharing links right here, offering a closer look at my technical prowess.</p>
+                    <br>
+                    </br>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://github.com/HeinXavierSwart"><i class="fab fa-github"></i></a>
+                    </div>
+
                 </div>
             </section>
             <hr class="m-0" />
